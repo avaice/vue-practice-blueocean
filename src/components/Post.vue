@@ -10,6 +10,7 @@ const post = () => {
   data.articles.unshift(sentence.value)
   localStorage.setItem('bo-articles', JSON.stringify(data))
   store.articles = data.articles
+  sentence.value = ''
 }
 </script>
 
